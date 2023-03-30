@@ -78,20 +78,17 @@ let ar = arr.filter((a) => a % 2 == 0);
 console.log(arr);
 console.log(ar.length);
 */
+//8
+/*
 var arr = new Array(20); 
 
 for (let i = 0; i < arr.length; i++) {
   arr[i] = Math.floor(Math.random() * 50) + 1; 
 }
-for (let item of arr) {
-    for (let comparator of arr) {
-        if(item === comparator){ 
-            console.log('Duplicate '+item);
-        }
-    }
-    
-}
-
+const duplicates = arr.filter((num, index) => {
+    return arr.indexOf(num) !== index;
+  });
 console.log(arr);
-
+console.log(duplicates);
+*/
 
