@@ -67,4 +67,31 @@ console.log(arr);
 arr.splice(0,3);
 console.log(arr);
 */
+//7
+/*
+var arr = new Array(20); 
+
+for (let i = 0; i < arr.length; i++) {
+  arr[i] = Math.floor(Math.random() * 100) + 1; 
+}
+let ar = arr.filter((a) => a % 2 == 0);
+console.log(arr);
+console.log(ar.length);
+*/
+var arr = new Array(20); 
+
+for (let i = 0; i < arr.length; i++) {
+  arr[i] = Math.floor(Math.random() * 50) + 1; 
+}
+for (let item of arr) {
+    for (let comparator of arr) {
+        if(item === comparator){ 
+            console.log('Duplicate '+item);
+        }
+    }
+    
+}
+
+console.log(arr);
+
 
