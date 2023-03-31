@@ -28,3 +28,15 @@ for (const item of words) {
 }
 console.log(arr.join(''));
 */
+//5
+/*
+let string = prompt("Input text");
+for (let i = 0; i < string.length; i++) {
+    if(string.startsWith(string[i]) && string.endsWith(string[i])){
+        string = string.slice(0+1, string.length-1);
+    }
+    
+}
+string.length == 1 ? console.log("palindrome") : console.log("Not palindrome");
+*/
+//6
