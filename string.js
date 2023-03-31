@@ -40,3 +40,15 @@ for (let i = 0; i < string.length; i++) {
 string.length == 1 ? console.log("palindrome") : console.log("Not palindrome");
 */
 //6
+//let string = "https://career.softserveinc.com/uk-ua/technology/course";
+let string = prompt("Input text");
+let protocol = string.split("://");
+console.log("Protocol: "+ protocol[0]);
+let domain = protocol[1].split("/");
+console.log("Domain: "+domain[0]);
+let paths = [];
+for (let i = 1; i < domain.length; i++) {
+    paths.push(domain[i]);
+}
+let path = paths.join("/");
+console.log("Path: "+path);
