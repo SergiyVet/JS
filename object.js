@@ -1,3 +1,4 @@
+/*
 let data = {
     minutes: new Date().getMinutes(),
     hours: new Date().getHours(),
@@ -49,3 +50,25 @@ data.showTime();
 data.addSecound();
 data.deleteSecound();
 data.time();
+*/
+//Task 2
+let car = {
+    manufacturer: "Volkswagen",
+    model: "Jetta",
+    year: 2011,
+    speed: 120,
+    show(){
+        document.write(`Car: manufacturer - ${this.manufacturer}, model - ${this.model}, year of manufacture - ${this.year}, average
+        speed - ${this.speed} km/h`)
+    },
+    time(distance){
+        let result = Math.floor(distance/this.speed);
+        console.log(result);
+        let brea = Math.floor(result/4);
+        document.write(`${result+brea} h`)
+    }
+}
+car.show();
+document.write("<br>")
+let distance = +prompt("Input distance in km");
+car.time(distance);
