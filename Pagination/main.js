@@ -40,7 +40,7 @@ function addProduct(product) {
     list.innerHTML += `<li><div class="card" style="width: 18rem;">
                             <img src="${product.thumbnail}" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">${product.title}</h5>
+                            <h5 class="card-title"><a href="product.html?id=${product.id}">${product.title}</a></h5>
                             <p class="card-text">${product.description}</p>
                             <p class="card-text">Вrand: ${product.brand}</p>
                             <p class="card-text">Price: <b>${product.price}$</b></p>
